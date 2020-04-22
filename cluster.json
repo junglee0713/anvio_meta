@@ -1,0 +1,14 @@
+{
+    "__default__" :
+    {
+        "h_vmem" : "10G",
+        "mem_free" : "4G",
+        "m_mem_free" : "4G"
+    },
+    "run_hmm":
+    {
+        "h_vmem": "16G",
+        "mem_free": "5G",
+        "m_mem_free": "5G"
+    }
+}

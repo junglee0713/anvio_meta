@@ -1,0 +1,20 @@
+all:
+  project_name: 'Sagori_8'
+  root: '/scr1/users/leej39/Sagori_123/anvio_meta_temp'
+  contig_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig'
+  bam_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/bam'
+  admin_email: 'junglee0713@gmail.com' 
+
+reformat:
+  min_contig_length: 1000
+
+hmm:
+  threads: 4
+
+ncbi_cog:
+  threads: 4
+
+pan_genome:
+  threads: 8
+  minbit: 0.5
+  mcl_inflation: 10
