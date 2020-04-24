@@ -1,0 +1,163 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 300
+Job counts:
+	count	jobs
+	1	all
+	8	profile
+	9
+
+[Thu Apr 23 21:36:32 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 1
+    wildcards: file=SRC.738409
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/contigs.db -T 4
+        
+Submitted job 1 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:33 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 3
+    wildcards: file=SRC.735689
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/contigs.db -T 4
+        
+Submitted job 3 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:33 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 4
+    wildcards: file=SRC.738319
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/contigs.db -T 4
+        
+Submitted job 4 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:34 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 5
+    wildcards: file=SRC.738561
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/contigs.db -T 4
+        
+Submitted job 5 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:34 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 6
+    wildcards: file=SRC.738335
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/contigs.db -T 4
+        
+Submitted job 6 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:34 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 8
+    wildcards: file=inf163Cat3T1n1
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/contigs.db -T 4
+        
+Submitted job 8 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:35 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 2
+    wildcards: file=inf186Cat3T1n1
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/contigs.db -T 4
+        
+Submitted job 2 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:36:35 2020]
+rule profile:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/.DONEcentrifuge
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    jobid: 7
+    wildcards: file=SRC.738162
+    threads: 4
+
+
+            anvi-profile -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/contigs.db -T 4
+        
+Submitted job 7 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 1
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 3
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 4
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 5
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 6
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 8
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 2
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+[Thu Apr 23 21:37:13 2020]
+Error in rule profile:
+    jobid: 7
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam-ANVIO_PROFILE/PROFILE.db
+    cluster_jobid: removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/leej39/anvio_meta/.snakemake/log/2020-04-23T213632.471545.snakemake.log

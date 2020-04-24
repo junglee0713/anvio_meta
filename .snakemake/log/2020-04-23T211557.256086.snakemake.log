@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 146 of /home/leej39/anvio_meta/Snakefile:
+Missing input files for rule contigs_mapping:
+/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738561_2.fastq.gz
+/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738561_1.fastq.gz

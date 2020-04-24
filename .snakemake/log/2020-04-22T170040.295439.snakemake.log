@@ -1,0 +1,545 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 300
+Job counts:
+	count	jobs
+	1	all
+	1	build_genome_storage
+	1	external_genome_path
+	8	get_contig_db
+	8	ncbi_cogs
+	8	reformat_fasta
+	8	run_hmm
+	35
+
+[Wed Apr 22 17:00:40 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/inf186Cat3T1n1-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/reformatted_contigs.fa
+    jobid: 28
+    wildcards: file=inf186Cat3T1n1-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/inf186Cat3T1n1-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/simplify-names.txt
+        
+Submitted job 28 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:41 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738162-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/reformatted_contigs.fa
+    jobid: 21
+    wildcards: file=SRC.738162-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738162-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/simplify-names.txt
+        
+Submitted job 21 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:41 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738409-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/reformatted_contigs.fa
+    jobid: 25
+    wildcards: file=SRC.738409-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738409-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/simplify-names.txt
+        
+Submitted job 25 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:42 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738319-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/reformatted_contigs.fa
+    jobid: 34
+    wildcards: file=SRC.738319-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738319-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/simplify-names.txt
+        
+Submitted job 34 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:42 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.735689-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/reformatted_contigs.fa
+    jobid: 19
+    wildcards: file=SRC.735689-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.735689-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/simplify-names.txt
+        
+Submitted job 19 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:42 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738561-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/reformatted_contigs.fa
+    jobid: 24
+    wildcards: file=SRC.738561-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738561-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/simplify-names.txt
+        
+Submitted job 24 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:43 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/inf163Cat3T1n1-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/reformatted_contigs.fa
+    jobid: 27
+    wildcards: file=inf163Cat3T1n1-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/inf163Cat3T1n1-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/simplify-names.txt
+        
+Submitted job 27 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:00:44 2020]
+rule reformat_fasta:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738335-contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/reformatted_contigs.fa
+    jobid: 22
+    wildcards: file=SRC.738335-contigs
+
+
+            anvi-script-reformat-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig/SRC.738335-contigs.fa                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/reformatted_contigs.fa                 --min-len 1000                 --simplify-name                 --report-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/simplify-names.txt
+        
+Submitted job 22 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:01:20 2020]
+Finished job 28.
+1 of 35 steps (3%) done
+
+[Wed Apr 22 17:01:20 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db
+    jobid: 12
+    wildcards: file=inf186Cat3T1n1-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db                 --project-name inf186Cat3T1n1-contigs
+        
+[Wed Apr 22 17:01:20 2020]
+Finished job 21.
+2 of 35 steps (6%) done
+[Wed Apr 22 17:01:20 2020]
+Finished job 25.
+3 of 35 steps (9%) done
+[Wed Apr 22 17:01:20 2020]
+Finished job 34.
+4 of 35 steps (11%) done
+[Wed Apr 22 17:01:20 2020]
+Finished job 19.
+5 of 35 steps (14%) done
+[Wed Apr 22 17:01:20 2020]
+Finished job 24.
+6 of 35 steps (17%) done
+[Wed Apr 22 17:01:20 2020]
+Finished job 27.
+7 of 35 steps (20%) done
+[Wed Apr 22 17:01:21 2020]
+Finished job 22.
+8 of 35 steps (23%) done
+Submitted job 12 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:21 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db
+    jobid: 9
+    wildcards: file=SRC.738409-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db                 --project-name SRC.738409-contigs
+        
+Submitted job 9 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:21 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db
+    jobid: 18
+    wildcards: file=SRC.738319-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db                 --project-name SRC.738319-contigs
+        
+Submitted job 18 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:22 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db
+    jobid: 3
+    wildcards: file=SRC.735689-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db                 --project-name SRC.735689-contigs
+        
+Submitted job 3 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:22 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db
+    jobid: 11
+    wildcards: file=inf163Cat3T1n1-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db                 --project-name inf163Cat3T1n1-contigs
+        
+Submitted job 11 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:23 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db
+    jobid: 6
+    wildcards: file=SRC.738335-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db                 --project-name SRC.738335-contigs
+        
+Submitted job 6 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:23 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db
+    jobid: 5
+    wildcards: file=SRC.738162-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db                 --project-name SRC.738162-contigs
+        
+Submitted job 5 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:01:23 2020]
+rule get_contig_db:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/reformatted_contigs.fa
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db
+    jobid: 8
+    wildcards: file=SRC.738561-contigs
+
+
+            anvi-gen-contigs-database --contigs-fasta /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/reformatted_contigs.fa                 --output-db-path /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db                 --project-name SRC.738561-contigs
+        
+Submitted job 8 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:02:01 2020]
+Finished job 12.
+9 of 35 steps (26%) done
+
+[Wed Apr 22 17:02:01 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEhmm
+    jobid: 30
+    wildcards: file=inf186Cat3T1n1-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEhmm
+        
+[Wed Apr 22 17:02:01 2020]
+Finished job 3.
+10 of 35 steps (29%) done
+[Wed Apr 22 17:02:01 2020]
+Finished job 11.
+11 of 35 steps (31%) done
+Submitted job 30 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:02:01 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEhmm
+    jobid: 23
+    wildcards: file=SRC.735689-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEhmm
+        
+Submitted job 23 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:02:02 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEhmm
+    jobid: 20
+    wildcards: file=inf163Cat3T1n1-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEhmm
+        
+Submitted job 20 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:02:11 2020]
+Finished job 6.
+12 of 35 steps (34%) done
+
+[Wed Apr 22 17:02:11 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEhmm
+    jobid: 31
+    wildcards: file=SRC.738335-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEhmm
+        
+Submitted job 31 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:02:31 2020]
+Finished job 8.
+13 of 35 steps (37%) done
+
+[Wed Apr 22 17:02:31 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEhmm
+    jobid: 33
+    wildcards: file=SRC.738561-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEhmm
+        
+[Wed Apr 22 17:02:31 2020]
+Finished job 30.
+14 of 35 steps (40%) done
+Submitted job 33 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:02:32 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEncbi_cog
+    jobid: 14
+    wildcards: file=inf186Cat3T1n1-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEncbi_cog
+        
+Submitted job 14 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:02:41 2020]
+Finished job 20.
+15 of 35 steps (43%) done
+
+[Wed Apr 22 17:02:41 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEncbi_cog
+    jobid: 4
+    wildcards: file=inf163Cat3T1n1-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEncbi_cog
+        
+Submitted job 4 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:02:51 2020]
+Finished job 9.
+16 of 35 steps (46%) done
+
+[Wed Apr 22 17:02:51 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEhmm
+    jobid: 32
+    wildcards: file=SRC.738409-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEhmm
+        
+[Wed Apr 22 17:02:51 2020]
+Finished job 23.
+17 of 35 steps (49%) done
+Submitted job 32 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:02:52 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEncbi_cog
+    jobid: 7
+    wildcards: file=SRC.735689-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEncbi_cog
+        
+Submitted job 7 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:03:01 2020]
+Finished job 31.
+18 of 35 steps (51%) done
+
+[Wed Apr 22 17:03:01 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEncbi_cog
+    jobid: 15
+    wildcards: file=SRC.738335-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEncbi_cog
+        
+Submitted job 15 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:04:12 2020]
+Finished job 5.
+19 of 35 steps (54%) done
+
+[Wed Apr 22 17:04:12 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEhmm
+    jobid: 26
+    wildcards: file=SRC.738162-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEhmm
+        
+[Wed Apr 22 17:04:12 2020]
+Finished job 33.
+20 of 35 steps (57%) done
+[Wed Apr 22 17:04:12 2020]
+Finished job 14.
+21 of 35 steps (60%) done
+[Wed Apr 22 17:04:12 2020]
+Finished job 32.
+22 of 35 steps (63%) done
+Submitted job 26 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:04:12 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEncbi_cog
+    jobid: 17
+    wildcards: file=SRC.738561-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEncbi_cog
+        
+Submitted job 17 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Wed Apr 22 17:04:13 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEncbi_cog
+    jobid: 16
+    wildcards: file=SRC.738409-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEncbi_cog
+        
+Submitted job 16 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:04:52 2020]
+Finished job 18.
+23 of 35 steps (66%) done
+
+[Wed Apr 22 17:04:52 2020]
+rule run_hmm:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEhmm
+    jobid: 29
+    wildcards: file=SRC.738319-contigs
+    threads: 4
+
+
+            anvi-run-hmms --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db                 --num-threads 4 &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEhmm
+        
+Submitted job 29 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:06:33 2020]
+Finished job 26.
+24 of 35 steps (69%) done
+
+[Wed Apr 22 17:06:33 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEncbi_cog
+    jobid: 10
+    wildcards: file=SRC.738162-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEncbi_cog
+        
+Submitted job 10 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:07:43 2020]
+Finished job 29.
+25 of 35 steps (71%) done
+
+[Wed Apr 22 17:07:43 2020]
+rule ncbi_cogs:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEhmm
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEncbi_cog
+    jobid: 13
+    wildcards: file=SRC.738319-contigs
+    threads: 4
+
+
+            anvi-run-ncbi-cogs --contigs-db /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db                 --num-threads 4 --search-with blastp &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEncbi_cog
+        
+Submitted job 13 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Wed Apr 22 17:22:58 2020]
+Finished job 4.
+26 of 35 steps (74%) done
+[Wed Apr 22 18:02:19 2020]
+Finished job 7.
+27 of 35 steps (77%) done
+[Wed Apr 22 18:28:36 2020]
+Finished job 15.
+28 of 35 steps (80%) done
+[Wed Apr 22 19:33:04 2020]
+Finished job 16.
+29 of 35 steps (83%) done
+[Wed Apr 22 20:31:30 2020]
+Finished job 17.
+30 of 35 steps (86%) done
+[Wed Apr 22 23:33:00 2020]
+Finished job 13.
+31 of 35 steps (89%) done
+[Thu Apr 23 00:30:05 2020]
+Finished job 10.
+32 of 35 steps (91%) done
+
+[Thu Apr 23 00:30:05 2020]
+rule external_genome_path:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEncbi_cog, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEncbi_cog
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/external_genome_path.tsv
+    jobid: 2
+
+Submitted job 2 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+Waiting at most 180 seconds for missing files.
+[Thu Apr 23 00:30:53 2020]
+Finished job 2.
+33 of 35 steps (94%) done
+
+[Thu Apr 23 00:30:53 2020]
+rule build_genome_storage:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/external_genome_path.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/Sagori_8-GENOMES.db
+    jobid: 1
+
+
+            anvi-gen-genomes-storage                 --external-genomes /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/external_genome_path.tsv                 --output-file /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/Sagori_8-GENOMES.db
+        
+Submitted job 1 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Thu Apr 23 00:31:43 2020]
+Finished job 1.
+34 of 35 steps (97%) done
+
+[Thu Apr 23 00:31:43 2020]
+localrule all:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/Sagori_8-GENOMES.db
+    jobid: 0
+
+[Thu Apr 23 00:31:43 2020]
+Finished job 0.
+35 of 35 steps (100%) done
+Complete log: /home/leej39/anvio_meta/.snakemake/log/2020-04-22T170040.295439.snakemake.log

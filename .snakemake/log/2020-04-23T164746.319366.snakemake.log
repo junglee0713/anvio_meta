@@ -1,0 +1,138 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 300
+Job counts:
+	count	jobs
+	1	all
+	8	import_taxonomy
+	9
+
+[Thu Apr 23 16:47:46 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEcentrifuge
+    jobid: 2
+    wildcards: file=SRC.738335-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEcentrifuge
+        
+Submitted job 2 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:47 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEcentrifuge
+    jobid: 3
+    wildcards: file=inf186Cat3T1n1-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEcentrifuge
+        
+Submitted job 3 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:47 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEcentrifuge
+    jobid: 7
+    wildcards: file=SRC.738561-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEcentrifuge
+        
+Submitted job 7 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:48 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEcentrifuge
+    jobid: 6
+    wildcards: file=SRC.735689-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEcentrifuge
+        
+Submitted job 6 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:48 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEcentrifuge
+    jobid: 8
+    wildcards: file=SRC.738162-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEcentrifuge
+        
+Submitted job 8 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:48 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEcentrifuge
+    jobid: 4
+    wildcards: file=SRC.738319-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEcentrifuge
+        
+Submitted job 4 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:49 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEcentrifuge
+    jobid: 5
+    wildcards: file=SRC.738409-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEcentrifuge
+        
+Submitted job 5 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 16:47:49 2020]
+rule import_taxonomy:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/centrifuge_hits.tsv, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/centrifuge_report.tsv
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEcentrifuge
+    jobid: 1
+    wildcards: file=inf163Cat3T1n1-contigs
+
+
+            anvi-import-taxonomy-for-genes                 -c /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/contigs.db -i /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/centrifuge_report.tsv /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/centrifuge_hits.tsv -p centrifuge &&             touch /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEcentrifuge
+        
+Submitted job 1 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Thu Apr 23 16:48:26 2020]
+Finished job 2.
+1 of 9 steps (11%) done
+[Thu Apr 23 16:48:26 2020]
+Finished job 3.
+2 of 9 steps (22%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 7.
+3 of 9 steps (33%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 6.
+4 of 9 steps (44%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 8.
+5 of 9 steps (56%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 4.
+6 of 9 steps (67%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 5.
+7 of 9 steps (78%) done
+[Thu Apr 23 16:48:27 2020]
+Finished job 1.
+8 of 9 steps (89%) done
+
+[Thu Apr 23 16:48:27 2020]
+localrule all:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335-contigs/.DONEcentrifuge, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689-contigs/.DONEcentrifuge
+    jobid: 0
+
+[Thu Apr 23 16:48:27 2020]
+Finished job 0.
+9 of 9 steps (100%) done
+Complete log: /home/leej39/anvio_meta/.snakemake/log/2020-04-23T164746.319366.snakemake.log

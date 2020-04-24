@@ -1,0 +1,155 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 300
+Job counts:
+	count	jobs
+	1	all
+	8	contigs_mapping
+	9
+
+[Thu Apr 23 21:18:00 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738335_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738335_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam.bai
+    jobid: 3
+    wildcards: file=SRC.738335
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738335_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738335_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam.bai
+        
+Submitted job 3 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:00 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf163Cat3T1n1_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf163Cat3T1n1_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam.bai
+    jobid: 4
+    wildcards: file=inf163Cat3T1n1
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf163Cat3T1n1_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf163Cat3T1n1_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam.bai
+        
+Submitted job 4 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:01 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf186Cat3T1n1_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf186Cat3T1n1_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam.bai
+    jobid: 2
+    wildcards: file=inf186Cat3T1n1
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf186Cat3T1n1_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/inf186Cat3T1n1_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam.bai
+        
+Submitted job 2 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:01 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.735689_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.735689_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam.bai
+    jobid: 1
+    wildcards: file=SRC.735689
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.735689_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.735689_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam.bai
+        
+Submitted job 1 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:02 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738561_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738561_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam.bai
+    jobid: 8
+    wildcards: file=SRC.738561
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738561_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738561_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam.bai
+        
+Submitted job 8 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:02 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738319_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738319_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam.bai
+    jobid: 6
+    wildcards: file=SRC.738319
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738319_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738319_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam.bai
+        
+Submitted job 6 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:03 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738409_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738409_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam.bai
+    jobid: 7
+    wildcards: file=SRC.738409
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738409_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738409_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam.bai
+        
+Submitted job 7 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+
+[Thu Apr 23 21:18:03 2020]
+rule contigs_mapping:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/reformatted_contigs.fa, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738162_1.fastq.gz, /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738162_2.fastq.gz
+    output: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam.bai
+    jobid: 5
+    wildcards: file=SRC.738162
+    threads: 4
+
+
+        ~/miniconda3/envs/sunbeam/bin/minimap2 -ax sr -t 4 /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/reformatted_contigs.fa /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738162_1.fastq.gz /scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq/SRC.738162_2.fastq.gz |             ~/miniconda3/envs/sunbeam/bin/samtools sort -@ 4 -o /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam -T /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.tmp - 
+        ~/miniconda3/envs/sunbeam/bin/samtools index /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam.bai
+        
+Submitted job 5 with external jobid 'removed environment variable LD_LIBRARY_PATH_modshare from submit environment - it is considered a security issue'.
+[Thu Apr 23 21:18:40 2020]
+Finished job 4.
+1 of 9 steps (11%) done
+[Thu Apr 23 21:18:40 2020]
+Finished job 2.
+2 of 9 steps (22%) done
+[Thu Apr 23 21:18:40 2020]
+Finished job 1.
+3 of 9 steps (33%) done
+[Thu Apr 23 21:18:40 2020]
+Finished job 8.
+4 of 9 steps (44%) done
+Waiting at most 180 seconds for missing files.
+[Thu Apr 23 21:19:24 2020]
+Finished job 6.
+5 of 9 steps (56%) done
+[Thu Apr 23 21:19:24 2020]
+Finished job 7.
+6 of 9 steps (67%) done
+[Thu Apr 23 21:19:34 2020]
+Finished job 3.
+7 of 9 steps (78%) done
+[Thu Apr 23 21:19:45 2020]
+Finished job 5.
+8 of 9 steps (89%) done
+
+[Thu Apr 23 21:19:45 2020]
+localrule all:
+    input: /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738162/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738409/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf163Cat3T1n1/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738319/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738561/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/inf186Cat3T1n1/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.738335/sorted.bam.bai, /scr1/users/leej39/Sagori_123/anvio_meta_temp/anvio_output/SRC.735689/sorted.bam.bai
+    jobid: 0
+
+[Thu Apr 23 21:19:45 2020]
+Finished job 0.
+9 of 9 steps (100%) done
+Complete log: /home/leej39/anvio_meta/.snakemake/log/2020-04-23T211800.005095.snakemake.log

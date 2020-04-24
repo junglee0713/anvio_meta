@@ -2,11 +2,14 @@ all:
   project_name: 'Sagori_8'
   root: '/scr1/users/leej39/Sagori_123/anvio_meta_temp'
   contig_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig'
-  bam_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/bam'
+  fastq_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq'
   admin_email: 'junglee0713@gmail.com' 
 
 reformat:
   min_contig_length: 1000
+
+mapping:
+  threads: 4
 
 hmm:
   threads: 4
@@ -18,3 +21,10 @@ pan_genome:
   threads: 8
   minbit: 0.5
   mcl_inflation: 10
+
+centrifuge:
+  threads: 8
+  centrifuge_db: '/mnt/isilon/microbiome/analysis/biodata/centrifuge/p+h+v/p+h+v'
+
+profile:
+  threads: 4
