@@ -1,8 +1,9 @@
 all:
   project_name: 'Sagori_8'
-  root: '/scr1/users/leej39/Sagori_123/anvio_meta_temp'
-  contig_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/contig'
-  fastq_dir: '/scr1/users/leej39/Sagori_123/anvio_meta_temp/data/fastq'
+  root: '/scr1/users/leej39/Sagori_123/anvio_meta_8'
+  coassembly_yaml: '/scr1/users/leej39/Sagori_123/mapping.yml'
+  contig: '/scr1/users/leej39/Sagori_123/sunbeam_output/assembly/coassembly/early8_final_contigs.fa'
+  fastq_dir: '/scr1/users/leej39/Sagori_123/sunbeam_output/qc/decontam'
   admin_email: 'junglee0713@gmail.com' 
 
 reformat:
@@ -15,15 +16,10 @@ hmm:
   threads: 4
 
 ncbi_cog:
-  threads: 4
-
-pan_genome:
   threads: 8
-  minbit: 0.5
-  mcl_inflation: 10
 
 centrifuge:
-  threads: 8
+  threads: 4
   centrifuge_db: '/mnt/isilon/microbiome/analysis/biodata/centrifuge/p+h+v/p+h+v'
 
 profile:

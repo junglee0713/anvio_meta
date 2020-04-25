@@ -10,5 +10,11 @@
         "h_vmem": "16G",
         "mem_free": "5G",
         "m_mem_free": "5G"
+    },
+    "ncbi_cogs":
+    {
+        "h_vmem": "20G",
+        "mem_free": "12G",
+        "m_mem_free": "12G"
     }
 }

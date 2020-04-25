@@ -2,55 +2,61 @@ import configparser
 import yaml
 import re
 
-contig_dir = config['all']['contig_dir']
 fastq_dir = config['all']['fastq_dir']
 anvio_output_dir = config['all']['root'] + '/anvio_output'
-genome_storage_fp = anvio_output_dir + '/' + config['all']['project_name'] + '-GENOMES.db'
-
-files, = glob_wildcards(contig_dir + '/{file}.fa')
-files = [f.replace('-contigs', '') for f in files]
-
+coassembly_yaml = config['all']['coassembly_yaml']
 workdir: config['all']['root']
 
-########
-### function to create the external genome path tsv
-########
+#######
+### list of samples
+### obtained from coassembly yaml file
+#######
 
-def get_external_genome_path(contig_db_list, output_fp):
-    with open(output_fp, 'w') as f:
-        f.write('name\tcontigs_db_path\n')
-        for db in contig_db_list:
-            name = re.sub(anvio_output_dir + '/', '', db)
-            name = re.sub('/contigs.db', '', name)
-            name = re.sub('-contigs', '', name)
-            name = re.sub('-|\.', '_', name) 
-            f.write(name + '\t' + db + '\n')
+with open(coassembly_yaml, 'r') as file:
+    coassemble_group = yaml.load(file, Loader = yaml.FullLoader)
+    samples = list(coassemble_group.values())[0]    
 
 rule all:
+    input:
+        anvio_output_dir + '/merged_profile/PROFILE.db'
+
+rule merge_profile:
     input: 
-        expand(anvio_output_dir + '/{file}/sorted.bam-ANVIO_PROFILE/PROFILE.db', file = files)
+        contig_db = ancient(anvio_output_dir + '/contigs.db')
+    output:
+        anvio_output_dir + '/merged_profile/PROFILE.db'
+    params:
+        profile_dir = anvio_output_dir + '/profile',
+        outdir = anvio_output_dir + '/merged_profile'
+    shell:
+        """
+            profiles=$(find {params.profile_dir} -name *PROFILE.db)
+            anvi-merge ${{profiles}} -o {params.outdir} -c {input.contig_db} 
+        """
 
 rule profile:
     input:
-        contig_db = ancient(anvio_output_dir + '/{file}/contigs.db'),
-        bam = anvio_output_dir + '/{file}/sorted.bam',
-        sentinel = anvio_output_dir + '/{file}/.DONEcentrifuge'
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        bam = anvio_output_dir + '/{sample}/sorted.bam',
+        sentinel = anvio_output_dir + '/.DONEcentrifuge'
     output:
-        anvio_output_dir + '/{file}/sorted.bam-ANVIO_PROFILE/PROFILE.db'
+        anvio_output_dir + '/profile/{sample}/PROFILE.db'
+    params:
+        anvio_output_dir + '/profile/{sample}'
     threads:
         config['profile']['threads'] 
     shell:
         """
-            anvi-profile -i {input.bam} -c {input.contig_db} -T {threads} -W
+            anvi-profile -i {input.bam} -o {params} -c {input.contig_db} -T {threads} -W
         """
 
 rule import_taxonomy:
     input:
-        contig_db = ancient(anvio_output_dir + '/{file}/contigs.db'),
-        hits = anvio_output_dir + '/{file}/centrifuge_hits.tsv',
-        report = anvio_output_dir + '/{file}/centrifuge_report.tsv'
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        hits = anvio_output_dir + '/centrifuge_hits.tsv',
+        report = anvio_output_dir + '/centrifuge_report.tsv'
     output:
-        anvio_output_dir + '/{file}/.DONEcentrifuge'
+        anvio_output_dir + '/.DONEcentrifuge'
     shell:
         """
             anvi-import-taxonomy-for-genes \
@@ -60,10 +66,10 @@ rule import_taxonomy:
 
 rule centrifuge:
     input:
-        anvio_output_dir + '/{file}/gene-calls.fa'
+        anvio_output_dir + '/gene-calls.fa'
     output:
-        hits = anvio_output_dir + '/{file}/centrifuge_hits.tsv',
-        report = anvio_output_dir + '/{file}/centrifuge_report.tsv'
+        hits = anvio_output_dir + '/centrifuge_hits.tsv',
+        report = anvio_output_dir + '/centrifuge_report.tsv'
     params:
         config['centrifuge']['centrifuge_db']
     threads:
@@ -75,36 +81,15 @@ rule centrifuge:
 
 rule get_seq_for_gene_calls:
     input:
-        contig_db = ancient(anvio_output_dir + '/{file}/contigs.db'),
-        sentinel = anvio_output_dir + '/{file}/.DONEncbi_cog'
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        sentinel = anvio_output_dir + '/.DONEncbi_cog'
     output:
-        anvio_output_dir + '/{file}/gene-calls.fa'
+        anvio_output_dir + '/gene-calls.fa'
     shell:
         """
             anvi-get-sequences-for-gene-calls \
                 -c {input.contig_db} -o {output}
         """
-
-rule build_genome_storage:
-    input:
-        anvio_output_dir + '/external_genome_path.tsv'
-    output:
-        genome_storage_fp
-    shell:
-        """
-            anvi-gen-genomes-storage \
-                --external-genomes {input} \
-                --output-file {output}
-        """
-
-rule external_genome_path:
-    input:
-        contig_db = expand(anvio_output_dir + '/{file}/contigs.db', file = files),
-        sentinel = expand(anvio_output_dir + '/{file}/.DONEncbi_cog', file = files)
-    output:
-        anvio_output_dir + '/external_genome_path.tsv'
-    run:
-        get_external_genome_path(input.contig_db, output[0])    
 
 ########
 ### If you are running COGs for the first time, 
@@ -115,10 +100,10 @@ rule external_genome_path:
 
 rule ncbi_cogs:
     input:
-        contig_db = ancient(anvio_output_dir + '/{file}/contigs.db'),
-        sentinel = anvio_output_dir + '/{file}/.DONEhmm'
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        sentinel = anvio_output_dir + '/.DONEhmm'
     output:
-        anvio_output_dir + '/{file}/.DONEncbi_cog'
+        anvio_output_dir + '/.DONEncbi_cog'
     threads:
         config['ncbi_cog']['threads']
     shell:
@@ -130,9 +115,9 @@ rule ncbi_cogs:
 
 rule run_hmm:
     input:
-        ancient(anvio_output_dir + '/{file}/contigs.db')
+        ancient(anvio_output_dir + '/contigs.db')
     output:
-        anvio_output_dir + '/{file}/.DONEhmm'
+        anvio_output_dir + '/.DONEhmm'
     threads:
         config['hmm']['threads']
     shell:
@@ -144,27 +129,27 @@ rule run_hmm:
 
 rule get_contig_db:
     input:
-        anvio_output_dir + '/{file}/reformatted_contigs.fa'
+        anvio_output_dir + '/reformatted_contigs.fa'
     output:
-        anvio_output_dir + '/{file}/contigs.db'
+        anvio_output_dir + '/contigs.db'
     params:
-        file = '{file}'
+        config['all']['project_name']
     shell:
         """
             anvi-gen-contigs-database --contigs-fasta {input} \
                 --output-db-path {output} \
-                --project-name {params.file}
+                --project-name {params}
         """
 
 rule contigs_mapping:
     input:
-        contig = anvio_output_dir + '/{file}/reformatted_contigs.fa',
-        reads = expand(fastq_dir + '/{{file}}_{rp}.fastq.gz', rp = [1, 2])
+        contig = anvio_output_dir + '/reformatted_contigs.fa',
+        reads = expand(fastq_dir + '/{{sample}}_{rp}.fastq.gz', rp = [1, 2])
     output:
-        bam = anvio_output_dir + '/{file}/sorted.bam',
-        bai = anvio_output_dir + '/{file}/sorted.bam.bai'
+        bam = anvio_output_dir + '/{sample}/sorted.bam',
+        bai = anvio_output_dir + '/{sample}/sorted.bam.bai'
     params:
-        temp = temp(anvio_output_dir + '/{file}/sorted.tmp')
+        temp = temp(anvio_output_dir + '/{sample}/sorted.tmp')
     threads: 
         config['mapping']['threads']
     shell:
@@ -176,12 +161,12 @@ rule contigs_mapping:
 
 rule reformat_fasta:
     input: 
-        contig_dir + '/{file}-contigs.fa'
+        config['all']['contig']
     output: 
-        anvio_output_dir + '/{file}/reformatted_contigs.fa'
+        anvio_output_dir + '/reformatted_contigs.fa'
     params:
         min_contig_length = config['reformat']['min_contig_length'],
-        report_file = anvio_output_dir + '/{file}/simplify-names.txt'
+        report_file = anvio_output_dir + '/simplify-names.txt'
     shell:
         """
             anvi-script-reformat-fasta {input} \
