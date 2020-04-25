@@ -12,7 +12,7 @@ snakemake \
     --jobs 300 \
     --configfile ${CONFIG_FP} \
     --cluster-config cluster.json \
-    --latency-wait 180 \
+    --latency-wait 30 \
     --notemp \
     --printshellcmds \
     --cluster \

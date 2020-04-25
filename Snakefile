@@ -22,7 +22,8 @@ rule all:
 
 rule merge_profile:
     input: 
-        contig_db = ancient(anvio_output_dir + '/contigs.db')
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        profile = expand(anvio_output_dir + '/profile/{sample}/PROFILE.db', sample = samples)
     output:
         anvio_output_dir + '/merged_profile/PROFILE.db'
     params:
@@ -31,7 +32,7 @@ rule merge_profile:
     shell:
         """
             profiles=$(find {params.profile_dir} -name *PROFILE.db)
-            anvi-merge ${{profiles}} -o {params.outdir} -c {input.contig_db} 
+            anvi-merge ${{profiles}} -o {params.outdir} -c {input.contig_db} -W
         """
 
 rule profile:
@@ -42,12 +43,15 @@ rule profile:
     output:
         anvio_output_dir + '/profile/{sample}/PROFILE.db'
     params:
-        anvio_output_dir + '/profile/{sample}'
+        outdir = anvio_output_dir + '/profile/{sample}',
+        sample = '{sample}'
     threads:
         config['profile']['threads'] 
     shell:
         """
-            anvi-profile -i {input.bam} -o {params} -c {input.contig_db} -T {threads} -W
+            sample={params.sample}
+            sample_id=${{sample//./}}
+            anvi-profile -i {input.bam} -o {params.outdir} -c {input.contig_db} -T {threads} -W -S ${{sample_id}}
         """
 
 rule import_taxonomy:
@@ -82,13 +86,34 @@ rule centrifuge:
 rule get_seq_for_gene_calls:
     input:
         contig_db = ancient(anvio_output_dir + '/contigs.db'),
-        sentinel = anvio_output_dir + '/.DONEncbi_cog'
+        sentinel = anvio_output_dir + '/.DONEscg_taxonomy'
     output:
         anvio_output_dir + '/gene-calls.fa'
     shell:
         """
             anvi-get-sequences-for-gene-calls \
                 -c {input.contig_db} -o {output}
+        """
+
+#######
+### If you are running scg taxonomy for the first time,
+### you will need to set up database by running
+### anvi-setup-scg-databases
+### Refer to http://merenlab.org/2019/10/08/anvio-scg-taxonomy/#setting-up-anvio-scg-taxonomy
+#######
+
+rule scg_taxonomy:
+    input:
+        contig_db = ancient(anvio_output_dir + '/contigs.db'),
+        sentinel = anvio_output_dir + '/.DONEncbi_cog'
+    output:
+        anvio_output_dir + '/.DONEscg_taxonomy'
+    threads:
+        config['scg_taxonomy']['threads']
+    shell:
+        """
+            anvi-run-scg-taxonomy -c {input.contig_db} --num-threads {threads} && \
+            touch {output}
         """
 
 ########

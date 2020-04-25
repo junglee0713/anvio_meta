@@ -18,6 +18,9 @@ hmm:
 ncbi_cog:
   threads: 8
 
+scg_taxonomy:
+  threads: 4
+
 centrifuge:
   threads: 4
   centrifuge_db: '/mnt/isilon/microbiome/analysis/biodata/centrifuge/p+h+v/p+h+v'
